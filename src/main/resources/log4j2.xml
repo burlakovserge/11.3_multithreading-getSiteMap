@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="INFO">
+  <Properties>
+    <Property name="LOG_PATTERN">%d{yyyy-MM-dd HH:mm:ss.SSS} [%-16t] %-5level %-6logger{36} - %msg%n</Property>
+  </Properties>
+
+  <appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="${LOG_PATTERN}" />
+    </Console>
+  </appenders>
+
+  <loggers>     
+    <root level="debug">
+      <appender-ref ref="Console" level="debug"/>
+	</root>
+  </loggers>
+</configuration>
